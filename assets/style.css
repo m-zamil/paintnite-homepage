@@ -1,0 +1,359 @@
+/*General styles */
+
+:root {
+  --blue: #21abca;
+  --golden: #f49c1e;
+  --pink: #e95b9e;
+  --off-white: #f4f4f4;
+  --green: #b7d158;
+  --grey: #cac8e4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  color: black;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+main *,
+main *::before,
+main *::after {
+  box-sizing: border-box;
+}
+h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: normal;
+  color: black;
+  font-size: 42px;
+}
+
+h2 {
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+  font-size: 2.5rem;
+}
+
+main p {
+  font-size: 1rem;
+  color: black;
+  font-family: inherit;
+  line-height: 1.625rem;
+  font-weight: 400;
+  margin: 1em 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  border: none;
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+}
+
+.primary__btn {
+  font-weight: bold;
+  border-radius: 28px;
+  background-color: var(--blue);
+  padding: 10px 18px;
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 16px;
+}
+.btn--d {
+  display: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.u {
+  text-decoration: underline;
+}
+
+.text-blue {
+  color: var(--blue);
+}
+.text-golden {
+  color: var(--golden);
+}
+.text-pink {
+  color: var(--pink);
+}
+.text-grey {
+  color: var(--grey);
+}
+.bg--pink {
+  background-color: var(--pink);
+}
+.bg--grey {
+  background-color: var(--grey);
+}
+.bg--green {
+  background-color: var(--green);
+}
+.bg--blue {
+  background-color: var(--blue);
+}
+.bg--white {
+  background-color: white;
+}
+
+.center {
+  text-align: center;
+}
+
+.container {
+  max-width: 352px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.section__title {
+  font-size: 45px;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Abril Fatface", cursive;
+  line-height: 1;
+  margin: 0.8em 0;
+}
+.section__subtitle {
+  font-size: 14px;
+  max-width: 352px;
+  margin: 1rem auto;
+  line-height: 1.3;
+}
+
+/* Hero Section */
+
+.hero {
+  padding: 0;
+}
+.hero .container {
+  max-width: 100%;
+  padding: 0;
+  position: relative;
+}
+
+.hero__video {
+  position: relative;
+  font-size: 0;
+  overflow: hidden;
+}
+.hero__video video {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+  min-height: 400px;
+  max-height: 600px;
+  object-fit: cover;
+  z-index: 2;
+}
+/* video {
+  clip-path: url(#svgClip);
+} */
+@media (min-width: 960px) {
+  video {
+    clip-path: url(#svgClip) !important;
+  }
+}
+.hero__video::after {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+  height: 141px;
+  background-image: url("./images/wave-shape.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  z-index: 1;
+  z-index: 2;
+}
+.hero__animation {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 143%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -40px;
+  z-index: 3;
+}
+.hero__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  z-index: 3;
+}
+.hero__video svg {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  bottom: 0;
+}
+/* Welcome section */
+.welcome {
+  background-image: url("./images/purple-paint-mb.png");
+  background-repeat: no-repeat;
+  background-position: left 60%;
+  background-size: 60px;
+  padding-bottom: 24px;
+}
+.welcome__img {
+  display: none;
+}
+.welcome .section__title {
+  text-align: left;
+}
+.welcome .section__subtitle {
+  text-align: left;
+}
+/* --Plan a NightOut-- */
+
+.plan__nightout {
+  padding: 60px 0;
+  background-image: url("./images/green-circle.svg"), url("./images/sea-green-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center -150px, center calc(100% + 150px);
+  background-size: 200px;
+}
+.plan__nightout .section__title {
+  text-align: center;
+}
+
+/*-- Responsive styles --*/
+
+@media (min-width: 960px) {
+  .section__subtitle {
+    max-width: 610px;
+    margin: 1rem auto;
+    font-size: 16px;
+  }
+  .btn--m {
+    display: none;
+  }
+  .btn--d {
+    display: block;
+  }
+  .primary__btn {
+    font-size: 16px;
+    padding: 12px 22px;
+  }
+
+  .container {
+    max-width: 1164px;
+    margin: 0 16px;
+    margin: 0 auto;
+  }
+  /* Hero section */
+
+  .hero .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  .hero__video::after {
+    display: none;
+  }
+  .hero__animation {
+    width: 100%;
+    margin-top: -60px;
+  }
+  /* Welcome section */
+  .welcome {
+    background-image: none;
+    margin-top: -43px;
+    position: relative;
+    z-index: 1;
+  }
+  .welcome .container {
+    background-image: url("./images/purple-paint-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left -170px;
+    background-size: 300px;
+    position: relative;
+    padding-top: 70px;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+  .welcome__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 56px 0;
+  }
+  .welcome__wrapper > div {
+    width: 50%;
+  }
+  .welcome__img {
+    display: block;
+  }
+  .welcome__img--wrapper {
+    text-align: center;
+    position: relative;
+  }
+  .welcome__img--wrapper::after {
+    content: "";
+    display: block;
+    background-image: url("./images/pink-brush.png");
+    background-image: url("./images/pink-paint.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    right: -46px;
+    bottom: 0;
+    top: 35%;
+    z-index: -1;
+  }
+  .welcome__img--wrapper img {
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .welcome .section__title {
+    max-width: 425px;
+  }
+  .welcome .section__subtitle {
+    margin-left: 0;
+    max-width: 425px;
+  }
+  /* --Plan a NightOut-- */
+}
