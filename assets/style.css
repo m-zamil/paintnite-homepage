@@ -409,6 +409,21 @@ img {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+/* --Fomo section-- */
+.fomo__section {
+  padding-top: 22px;
+}
+.fomo__animation {
+  pointer-events: none;
+}
+.fomo__animation--desktop {
+  display: none;
+}
+.fomo__animation--mobile {
+  margin-top: -80px;
+  margin-bottom: -70px;
+  padding: 0;
+}
 
 /* --Desktop styles-- */
 
@@ -590,5 +605,20 @@ img {
     background-size: 100%;
     width: 632px;
     height: 400px;
+  }
+  /* --Fomo section-- */
+  .fomo__section {
+    padding-top: 52px;
+  }
+  .fomo__animation--desktop {
+    margin-top: -100px;
+    margin-bottom: -150px;
+    padding: 0 40px;
+  }
+  .fomo__animation--mobile {
+    display: none;
+  }
+  .fomo__animation--desktop {
+    display: block;
   }
 }
