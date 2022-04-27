@@ -312,7 +312,6 @@ img {
   text-align: center;
 }
 
-/*-- Responsive styles --*/
 @media (max-width: 960px) {
   .active.center .nightout__card .hover-content {
     opacity: 1;
@@ -364,6 +363,55 @@ img {
   }
 }
 
+.cta__banner {
+  background-image: url(./images/cta__banner-bg.png);
+  background-position: center center;
+  background-size: cover;
+}
+.cta__banner .container {
+  position: relative;
+  overflow-x: clip;
+  max-width: 550px;
+  padding-bottom: 30px;
+}
+.cta__banner .section__title {
+  font-size: 38px;
+  text-align: left;
+  color: white;
+  max-width: 250px;
+  z-index: 2;
+  position: relative;
+  margin-top: 14px;
+  margin-bottom: 28px;
+  line-height: 1.4;
+}
+
+.cta__banner .primary__btn {
+  background-color: white;
+  color: var(--blue);
+  margin-top: 12px;
+  z-index: 2;
+  position: relative;
+}
+.cta__banner .container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  left: 285px;
+  left: 188px;
+  font-size: 0;
+  z-index: 1;
+  width: 250px;
+  height: 380px;
+  background-image: url("./images/cta-banner-mb.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* --Desktop styles-- */
+
 @media (min-width: 960px) {
   .section__subtitle {
     max-width: 610px;
@@ -400,7 +448,7 @@ img {
     margin-top: -60px;
   }
   .hero__video video {
-    clip-path: url(#svgClip) !important;
+    clip-path: url(#svgClip);
   }
   /* Welcome section */
   .welcome {
@@ -469,56 +517,78 @@ img {
     max-width: 425px;
   }
   /* --Plan a NightOut-- */
+  .nightout {
+    background-image: url("./images/green-circle.svg"), url("./images/sea-green-circle.svg"), url("./images/golden-circle.svg");
+    background-position: calc(100% + 70px) -110px, center calc(100% + 140px), -165px 320px;
+    padding-bottom: 126px;
+  }
   .nightout .container {
     max-width: 1164px;
     padding: 1rem;
   }
-  .nightout__card:hover .hover-content {
+  .nightout__card.hover .hover-content {
     opacity: 1;
     height: 100%;
     transform: translateY(0%);
   }
 
-  .nightout__card:hover .nightout__card-image img {
+  .nightout__card.hover .nightout__card-image img {
     filter: grayscale(0);
     filter: none;
   }
-  .nightout__card.card-1:hover .nightout__card--borders {
+  .nightout__card.card-1.hover .nightout__card--borders {
     border-color: #ed5a9c;
   }
-  .nightout__card.card-1:hover .nightout__card-content {
+  .nightout__card.card-1.hover .nightout__card-content {
     background-color: #ed5a9c;
   }
-  .nightout__card.card-1:hover .nightout__card-btn .btn {
+  .nightout__card.card-1.hover .nightout__card-btn .btn {
     color: #ed5a9c;
   }
 
-  .nightout__card.card-2:hover .nightout__card--borders {
+  .nightout__card.card-2.hover .nightout__card--borders {
     border-color: #f79d31;
   }
-  .nightout__card.card-2:hover .nightout__card-content {
+  .nightout__card.card-2.hover .nightout__card-content {
     background-color: #f79d31;
   }
-  .nightout__card.card-2:hover .nightout__card-btn .btn {
+  .nightout__card.card-2.hover .nightout__card-btn .btn {
     color: #f79d31;
   }
 
-  .nightout__card.card-3:hover .nightout__card--borders {
+  .nightout__card.card-3.hover .nightout__card--borders {
     border-color: #00abc8;
   }
-  .nightout__card.card-3:hover .nightout__card-content {
+  .nightout__card.card-3.hover .nightout__card-content {
     background-color: #00abc8;
   }
-  .nightout__card.card-3:hover .nightout__card-btn .btn {
+  .nightout__card.card-3.hover .nightout__card-btn .btn {
     color: #00abc8;
   }
-  .nightout__card.card-4:hover .nightout__card--borders {
+  .nightout__card.card-4.hover .nightout__card--borders {
     border-color: #b7d259;
   }
-  .nightout__card.card-4:hover .nightout__card-content {
+  .nightout__card.card-4.hover .nightout__card-content {
     background-color: #b7d259;
   }
-  .nightout__card.card-4:hover .nightout__card-btn .btn {
+  .nightout__card.card-4.hover .nightout__card-btn .btn {
     color: #b7d259;
+  }
+  /* cta banner*/
+  .cta__banner .container {
+    padding-bottom: 32px;
+    max-width: 1164px;
+  }
+  .cta__banner .section__title {
+    max-width: 550px;
+    font-size: 51px;
+  }
+  .cta__banner .container::after {
+    background-image: url("./images/cta-banner.png");
+    right: 0;
+    left: 498px;
+    background-size: 100%;
+    width: 632px;
+    height: 400px;
   }
 }
