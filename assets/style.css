@@ -573,7 +573,7 @@ img {
     padding: 1rem;
   }
   .nightout__cards {
-    max-width: 90%;
+    max-width: 85%;
     margin: 0 auto;
   }
   .nightout__card.hover .hover-content {
