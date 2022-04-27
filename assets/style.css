@@ -131,7 +131,7 @@ img {
 }
 
 .section__title {
-  font-size: 45px;
+  font-size: 38px;
   font-weight: 400;
   text-align: center;
   font-family: "Abril Fatface", cursive;
@@ -169,8 +169,8 @@ img {
   left: 0;
   max-width: 100%;
   width: 100%;
-  min-height: 400px;
-  max-height: 600px;
+  min-height: 350px;
+  max-height: 550px;
   object-fit: cover;
   z-index: 2;
 }
@@ -195,7 +195,7 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 143%;
+  width: 135%;
   left: 50%;
   transform: translateX(-50%);
   margin-top: -40px;
@@ -205,8 +205,11 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 20%);
+  transform: translate(-50%, 10%);
   z-index: 3;
+}
+.hero__cta .primary__btn {
+  margin-top: 6px;
 }
 .hero__video svg {
   position: absolute;
@@ -232,6 +235,18 @@ img {
 .welcome .section__subtitle {
   text-align: left;
 }
+/* --trending-- */
+.trending {
+  background-color: var(--off-white);
+  padding: 48px 0;
+}
+.trending iframe {
+  min-height: 505px;
+}
+.trending iframe .YM_EventCardList::-webkit-scrollbar {
+  display: none;
+}
+
 /* --Plan a NightOut-- */
 
 .nightout {
@@ -239,7 +254,7 @@ img {
   background-image: url("./images/green-circle.svg"), url("./images/sea-green-circle.svg");
   background-repeat: no-repeat;
   background-position: center -150px, center calc(100% + 150px);
-  background-size: 200px;
+  background-size: 190px;
   color: white;
 }
 .nightout .container {
@@ -284,7 +299,7 @@ img {
 
 .nightout__card-title {
   font-family: "Abril Fatface", cursive;
-  font-size: 34px;
+  font-size: 28px;
   font-weight: normal;
   color: white;
   margin: 0 auto 8px;
@@ -295,7 +310,8 @@ img {
   font-size: 14px;
   color: white;
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.3;
+  margin-bottom: 8px;
 }
 .nightout__card-btn {
   text-align: left;
@@ -306,8 +322,8 @@ img {
   display: inline-block;
   background-color: white;
   border-radius: 22px;
-  padding: 12px 18px;
-  margin: 6px 0 26px;
+  padding: 8px 14px;
+  margin: 6px 0 20px;
   min-width: 150px;
   text-align: center;
 }
@@ -375,7 +391,7 @@ img {
   padding-bottom: 30px;
 }
 .cta__banner .section__title {
-  font-size: 38px;
+  font-size: 34px;
   text-align: left;
   color: white;
   max-width: 250px;
@@ -383,7 +399,7 @@ img {
   position: relative;
   margin-top: 14px;
   margin-bottom: 28px;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .cta__banner .primary__btn {
@@ -392,6 +408,7 @@ img {
   margin-top: 12px;
   z-index: 2;
   position: relative;
+  font-size: 14px;
 }
 .cta__banner .container::after {
   content: "";
@@ -403,8 +420,8 @@ img {
   left: 188px;
   font-size: 0;
   z-index: 1;
-  width: 250px;
-  height: 380px;
+  width: 210px;
+  height: 320px;
   background-image: url("./images/cta-banner-mb.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -415,6 +432,8 @@ img {
 }
 .fomo__animation {
   pointer-events: none;
+  width: 90%;
+  margin: 0 auto;
 }
 .fomo__animation--desktop {
   display: none;
@@ -449,6 +468,9 @@ img {
     margin: 0 16px;
     margin: 0 auto;
   }
+  .section__title {
+    font-size: 45px;
+  }
   /* Hero section */
 
   .hero .container {
@@ -459,8 +481,11 @@ img {
     display: none;
   }
   .hero__animation {
-    width: 100%;
+    max-width: 800px;
     margin-top: -60px;
+  }
+  .hero__cta .primary__btn {
+    margin-top: 16px;
   }
   .hero__video video {
     clip-path: url(#svgClip);
@@ -490,7 +515,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 56px 0;
+    padding: 26px 0;
   }
   .welcome__wrapper > div {
     width: 50%;
@@ -513,13 +538,13 @@ img {
     width: 70%;
     height: 100%;
     position: absolute;
-    right: -46px;
+    right: -10px;
     bottom: 0;
     top: 35%;
     z-index: -1;
   }
   .welcome__img--wrapper img {
-    max-width: 450px;
+    max-width: 400px;
     display: block;
     margin: 0 auto;
   }
@@ -535,11 +560,21 @@ img {
   .nightout {
     background-image: url("./images/green-circle.svg"), url("./images/sea-green-circle.svg"), url("./images/golden-circle.svg");
     background-position: calc(100% + 70px) -110px, center calc(100% + 140px), -165px 320px;
-    padding-bottom: 126px;
+    padding-bottom: 160px;
+    padding-top: 32px;
+    background-size: 200px;
+  }
+
+  .nightout .section__title {
+    margin-bottom: 1.5em;
   }
   .nightout .container {
     max-width: 1164px;
     padding: 1rem;
+  }
+  .nightout__cards {
+    max-width: 90%;
+    margin: 0 auto;
   }
   .nightout__card.hover .hover-content {
     opacity: 1;
@@ -592,19 +627,21 @@ img {
   /* cta banner*/
   .cta__banner .container {
     padding-bottom: 32px;
-    max-width: 1164px;
+    max-width: 1018px;
   }
   .cta__banner .section__title {
     max-width: 550px;
-    font-size: 51px;
+    font-size: 46px;
+    line-height: 1.4;
+    margin-bottom: 20px;
   }
   .cta__banner .container::after {
     background-image: url("./images/cta-banner.png");
     right: 0;
-    left: 498px;
+    left: 447px;
     background-size: 100%;
-    width: 632px;
-    height: 400px;
+    width: 555px;
+    height: 350px;
   }
   /* --Fomo section-- */
   .fomo__section {

@@ -8,7 +8,7 @@ $(document).ready(function () {
         dots:false,
         responsive:{
             0:{
-                items:1.3,
+                items:1.5,
                 loop:true,
                 center:true
             },
