@@ -444,6 +444,67 @@ img {
   padding: 0;
 }
 
+/* --what we do-- */
+.whatwedo .container {
+  padding: 0;
+  max-width: 555px;
+}
+.whatwedo__card {
+  display: flex;
+  flex-wrap: wrap;
+}
+.whatwedo__card-image {
+  font-size: 0;
+}
+.whatwedo__card-content {
+  color: white;
+  padding: 2rem;
+}
+.whatwedo__card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 3px;
+  margin: 0;
+}
+.whatwedo__card-text {
+  font-size: 14px;
+  color: white;
+  line-height: 1.3;
+  margin: 22px 0;
+}
+.whatwedo__card-link a {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+}
+
+.whatwedo__card.card-1 .whatwedo__card-content {
+  background-color: #ea5b9e;
+}
+.whatwedo__card.card-2 .whatwedo__card-content {
+  background-color: #f49c1e;
+}
+.whatwedo__card.card-3 .whatwedo__card-content {
+  background-color: #b7d157;
+}
+@media (min-width: 400px) {
+  .whatwedo__card {
+    flex-wrap: nowrap;
+  }
+  .whatwedo__card > div {
+    width: 50%;
+  }
+  .whatwedo__card-text {
+    margin: 18px 0;
+  }
+  .whatwedo__card.card-1 .whatwedo__card-image {
+    content: "";
+    background-image: url("./images/whatwedo-2.jpg");
+  }
+}
+
 /* --Desktop styles-- */
 
 @media (min-width: 960px) {
@@ -519,6 +580,7 @@ img {
   }
   .welcome__wrapper > div {
     width: 50%;
+    padding-left: 73px;
   }
   .welcome__img {
     display: block;
@@ -657,5 +719,8 @@ img {
   }
   .fomo__animation--desktop {
     display: block;
+  }
+  /* --what we do-- */
+  .whatwedo {
   }
 }
