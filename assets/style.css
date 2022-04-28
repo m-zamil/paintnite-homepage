@@ -613,6 +613,109 @@ img {
   }
 }
 
+/* --PaintNite Hey-- */
+.pnHey {
+  overflow-x: hidden;
+  padding-top: 24px;
+  padding-bottom: 48px;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+.pnHey .section__title {
+  margin-bottom: 16px;
+}
+
+.pnHey p {
+  font-size: 12px;
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+
+.pnHey .section__subtitle {
+  letter-spacing: 2px;
+  font-weight: bold;
+  max-width: 250px;
+  font-size: 12px;
+}
+.pnHey__gallery {
+  display: none;
+}
+.pnHey__images {
+  text-align: center;
+  position: relative;
+}
+.pnHey__images img {
+  max-width: 280px;
+  padding-left: 15px;
+  padding-bottom: 36px;
+  display: block;
+  margin: 0 auto;
+}
+.pnHey__images::before {
+  content: "";
+  position: absolute;
+  width: 470px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  background-image: url("./images/purple-paint.png"), url("./images/pink-paint.png");
+  background-repeat: no-repeat;
+  background-position: 0 center, 240px center;
+  background-size: 220px;
+}
+.pnHey__btn {
+  text-align: center;
+}
+.pnHey .primary__btn {
+  min-width: 140px;
+}
+
+/* --Rewards banner-- */
+.rewards__banner {
+  background-color: var(--off-white);
+  padding: 40px 0 32px;
+  margin-top: 100px;
+  position: relative;
+}
+.rewards__banner::before {
+  content: "";
+  width: 92px;
+  height: 93px;
+  background-image: url("./images/social-icon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  position: absolute;
+  top: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+.rewards__banner .section__title {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+.rewards__btn {
+  text-align: center;
+}
+.rewards__btn .primary__btn {
+  padding: 10px 22px;
+  min-width: 140px;
+  margin-top: 0;
+}
+
 /* --Desktop styles-- */
 
 @media (min-width: 960px) {
@@ -897,5 +1000,62 @@ img {
     right: 0;
     width: calc(100% + 20px);
     left: -44px;
+  }
+  /* --PaintNite.Hey-- */
+  .pnHey {
+    background-image: url(./images/purple-paint.png), url(./images/pink-paint.png);
+    background-repeat: no-repeat;
+    background-position: -17% top, calc(100% + 176px) bottom;
+    background-size: 320px;
+    padding-bottom: 70px;
+  }
+  .pnHey .container {
+    max-width: 960px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .pnHey__wrapper {
+    display: flex;
+  }
+
+  .pnHey .pnHey__content .pnHey__images {
+    display: none;
+  }
+  .pnHey__gallery {
+    display: block;
+    width: 50%;
+    text-align: left;
+  }
+  .pnHey__gallery img {
+    max-width: 350px;
+  }
+  .pnHey__content {
+    text-align: right;
+    width: 50%;
+  }
+  .pnHey .section__title {
+    text-align: right;
+  }
+  .pnHey p {
+    font-size: 15px;
+    margin-left: auto;
+    max-width: 445px;
+  }
+  .pnHey .section__subtitle {
+    font-size: 19px;
+    line-height: 1.25;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .pnHey__btn {
+    text-align: right;
+  }
+  .pnHey .primary__btn {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 22px;
   }
 }
