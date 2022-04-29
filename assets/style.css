@@ -798,6 +798,68 @@ img {
   display: none;
 }
 
+/* Email form subscription */
+.email__subs {
+  background-color: var(--off-white);
+  padding: 40px 0;
+}
+.email__subs .container {
+  max-width: 450px;
+  padding: 0;
+}
+.email__subs .section__title {
+  margin-top: 0;
+}
+.form__wrapper {
+  max-width: 650px;
+  width: 100%;
+  height: 50px;
+  border-radius: 60px;
+  overflow: hidden;
+  margin: 0 auto;
+  transform: scale(0.85);
+}
+.subscription {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.subscription .add-email {
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  border: 1px solid #b2b2b2;
+  border-radius: 60px;
+}
+.subscription .submit-email {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 150px;
+  border-radius: 60px;
+  outline: none;
+  margin: 0;
+  padding: 0 20px;
+  cursor: pointer;
+  background: #00abc8;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Roboto";
+  color: #ffffff;
+  border: 1px solid #b2b2b2;
+}
+.email__subs ::placeholder {
+  color: #b2b2b2;
+  font-size: 16px;
+}
+
 /* --Desktop styles-- */
 
 @media (min-width: 960px) {
@@ -1211,5 +1273,22 @@ img {
   }
   .social__gallery img:nth-child(n + 5) {
     display: block;
+  }
+  /* Email form subscription */
+  .email__subs .container {
+    max-width: 1164px;
+    padding: 1rem;
+  }
+  .form__wrapper {
+    transform: scale(1);
+  }
+  .subscription .add-email {
+    width: 100%;
+  }
+  .subscription .submit-email {
+    min-width: 185px;
+  }
+  .email__subs {
+    padding: 70px 0;
   }
 }
