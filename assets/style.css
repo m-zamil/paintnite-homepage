@@ -457,6 +457,12 @@ img {
   margin-bottom: -70px;
   padding: 0;
 }
+#fomoAnimationPlay {
+  font-size: 0;
+  height: 1px;
+  width: 100%;
+  position: relative;
+}
 
 /* --what we do-- */
 .whatwedo .container {
@@ -1084,13 +1090,7 @@ img {
   .fomo__animation--desktop {
     display: block;
   }
-  #fomoAnimationPlay {
-    font-size: 0;
-    height: 1px;
-    width: 100%;
-    position: relative;
-    top: 290px;
-  }
+
   /* --what we do-- */
   .whatwedo .container {
     max-width: 1164px;
