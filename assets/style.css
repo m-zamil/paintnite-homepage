@@ -1255,7 +1255,7 @@ img {
     margin: 32px 0 16px;
   }
   .social__gallery {
-    max-width: 770px;
+    max-width: 650px;
     justify-content: center;
   }
   .social__gallery img {
@@ -1263,13 +1263,13 @@ img {
   }
   .social__outline {
     text-align: left;
-    margin-top: -340px;
+    margin-top: -285px;
     background-image: url("./images/social-outline-bg.svg");
     background-repeat: no-repeat;
     background-position: calc(100% + 30px) -150px;
   }
   .social__outline div {
-    font-size: 85px;
+    font-size: 72px;
   }
   .social__gallery img:nth-child(n + 5) {
     display: block;
