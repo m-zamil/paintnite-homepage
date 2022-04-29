@@ -679,8 +679,8 @@ img {
 /* --Rewards banner-- */
 .rewards__banner {
   background-color: var(--off-white);
-  padding: 40px 0 32px;
-  margin-top: 100px;
+  padding: 32px 0 32px;
+  margin-top: 72px;
   position: relative;
 }
 .rewards__banner::before {
@@ -706,14 +706,96 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
+  position: relative;
+  z-index: 2;
 }
 .rewards__btn {
   text-align: center;
+  z-index: 2;
+  position: relative;
 }
 .rewards__btn .primary__btn {
   padding: 10px 22px;
   min-width: 140px;
   margin-top: 0;
+}
+.rewards__images {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.rewards__images img {
+  position: relative;
+  width: 150px;
+  max-width: 25%;
+}
+.rewards__images .img-1 {
+  top: 90px;
+}
+.rewards__images .img-2 {
+  top: -56px;
+}
+/* --Social media section--*/
+.social__section {
+  padding-top: 85px;
+  background-image: url("./images/green-circle.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% + 180px) 28px;
+  background-size: 250px;
+}
+.social__section .container {
+  max-width: 100%;
+  padding: 0;
+}
+.social__section .section__title {
+  text-align: left;
+  line-height: 1.2;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+}
+.social__gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  max-width: 352px;
+  margin: 0 auto;
+}
+.social__gallery img {
+  width: calc(50% - 10px);
+  margin-bottom: 10px;
+  margin: 5px;
+}
+.social__gallery img:nth-child(n + 5) {
+  display: none;
+}
+
+.social__outline {
+  text-align: center;
+  overflow: hidden;
+  background-color: #ea5b9e;
+  margin-top: -130px;
+  position: relative;
+  z-index: -1;
+}
+.social__outline div {
+  font-size: 2.6rem;
+  font-weight: bold;
+  display: block;
+  -webkit-text-fill-color: var(--pink);
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.5);
+  color: var(--pink);
+  line-height: 1;
+  user-select: none;
+}
+.social__hastag {
+  display: none;
 }
 
 /* --Desktop styles-- */
@@ -788,10 +870,11 @@ img {
     align-items: center;
     justify-content: space-between;
     padding: 26px 0;
+    margin: 0 auto;
+    max-width: 985px;
   }
   .welcome__wrapper > div {
     width: 50%;
-    padding-left: 73px;
   }
   .welcome__img {
     display: block;
@@ -811,7 +894,7 @@ img {
     width: 70%;
     height: 100%;
     position: absolute;
-    right: -10px;
+    right: -90px;
     bottom: 0;
     top: 35%;
     z-index: -1;
@@ -824,7 +907,7 @@ img {
   .welcome__img--wrapper img {
     max-width: 400px;
     display: block;
-    margin: 0 auto;
+    margin-left: auto;
   }
 
   .welcome .section__title {
@@ -909,7 +992,7 @@ img {
   }
   .cta__banner .section__title {
     max-width: 550px;
-    font-size: 46px;
+    font-size: 44px;
     line-height: 1.4;
     margin-bottom: 20px;
   }
@@ -1057,5 +1140,76 @@ img {
     font-size: 14px;
     text-align: center;
     padding: 10px 22px;
+  }
+  /* Rewards banner */
+  .rewards__banner {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .rewards__banner .section__title {
+    margin-left: 0;
+    text-align: left;
+    line-height: 1.3;
+  }
+  .rewards__btn {
+    text-align: left;
+  }
+  .rewards__btn .primary__btn {
+    font-size: 14px;
+    text-align: center;
+  }
+  .rewards__banner .container {
+    position: relative;
+    max-width: 922px;
+  }
+  .rewards__banner::before {
+    top: calc(100% - 65px);
+  }
+  .rewards__images {
+    justify-content: flex-end;
+  }
+  .rewards__images .img-1 {
+    order: 2;
+    top: 40px;
+  }
+  .rewards__images .img-2 {
+    top: -128px;
+  }
+  /* --Social media section-- */
+  .social__section {
+    background-position: -180px 28px;
+  }
+  .social__section .section__title {
+    max-width: 450px;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  .social__hastag {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    color: var(--pink);
+    margin: 32px 0 16px;
+  }
+  .social__gallery {
+    max-width: 770px;
+    justify-content: center;
+  }
+  .social__gallery img {
+    max-width: calc(33% - 20px);
+  }
+  .social__outline {
+    text-align: left;
+    margin-top: -340px;
+    background-image: url("./images/social-outline-bg.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% + 30px) -150px;
+  }
+  .social__outline div {
+    font-size: 85px;
+  }
+  .social__gallery img:nth-child(n + 5) {
+    display: block;
   }
 }
