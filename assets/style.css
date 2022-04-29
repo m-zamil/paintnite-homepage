@@ -245,7 +245,7 @@ img {
   padding: 48px 0;
 }
 .trending iframe {
-  min-height: 505px;
+  min-height: 520px;
 }
 .trending iframe .YM_EventCardList::-webkit-scrollbar {
   display: none;
