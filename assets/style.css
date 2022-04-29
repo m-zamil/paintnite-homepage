@@ -897,7 +897,7 @@ img {
     display: none;
   }
   .hero__animation {
-    max-width: 950px;
+    max-width: 100%;
     margin-top: -60px;
   }
   .hero__cta .primary__btn {
@@ -1180,12 +1180,14 @@ img {
     width: 50%;
   }
   .pnHey .section__title {
-    text-align: right;
+    text-align: left;
   }
   .pnHey p {
     font-size: 15px;
     margin-left: auto;
     max-width: 445px;
+    text-align: left;
+    margin-left: 0;
   }
   .pnHey .section__subtitle {
     font-size: 19px;
@@ -1194,9 +1196,11 @@ img {
     margin-left: auto;
     margin-right: 0;
     margin-bottom: 30px;
+    text-align: left;
+    margin-left: 0;
   }
   .pnHey__btn {
-    text-align: right;
+    text-align: left;
   }
   .pnHey .primary__btn {
     font-size: 14px;
