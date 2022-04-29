@@ -1088,6 +1088,8 @@ img {
     font-size: 0;
     height: 1px;
     width: 100%;
+    position: relative;
+    top: 100px;
   }
   /* --what we do-- */
   .whatwedo .container {
