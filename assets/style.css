@@ -1084,6 +1084,11 @@ img {
   .fomo__animation--desktop {
     display: block;
   }
+  #fomoAnimationPlay {
+    font-size: 0;
+    height: 1px;
+    width: 100%;
+  }
   /* --what we do-- */
   .whatwedo .container {
     max-width: 1164px;
