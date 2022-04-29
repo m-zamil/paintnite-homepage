@@ -36,17 +36,29 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
     <script>
-      LottieInteractivity.create({
-        player: "#firstLottie",
-        mode: "scroll",
-        container: "#MyContainerId",
-        actions: [
-          {
-            visibility: [0, 1.0],
-            type: "play",
-            frames: [90, 123],
-          },
-        ],
+      document.addEventListener("DOMContentLoaded", function () {
+        LottieInteractivity.create({
+          player: "#firstLottie",
+          mode: "scroll",
+          actions: [
+            {
+              visibility: [0, 1],
+              type: "play",
+              frames: [0, 70],
+            },
+          ],
+        });
+        LottieInteractivity.create({
+          player: "#secondLottie",
+          mode: "scroll",
+          actions: [
+            {
+              visibility: [0, 1],
+              type: "play",
+              frames: [0, 70],
+            },
+          ],
+        });
       });
     </script>
   </head>
@@ -165,10 +177,10 @@
           <div class="container">
             <h2 class="section__title">skip the FOMO</h2>
             <div class="fomo__animation fomo__animation--desktop" media="(min-width:960px)">
-              <lottie-player id="firstLottie" src="./assets/animation/fomo-desktop.json" background="transparent" speed="1" loop autoplay></lottie-player>
+              <lottie-player id="firstLottie" src="./assets/animation/fomo-desktop.json" background="transparent" speed="1"></lottie-player>
             </div>
             <div class="fomo__animation fomo__animation--mobile" media="max-width:960px">
-              <lottie-player id="secondLottie" src="./assets/animation/fomo-mobile.json" background="transparent" speed="1" loop autoplay></lottie-player>
+              <lottie-player id="secondLottie" src="./assets/animation/fomo-mobile.json" background="transparent" speed="1"></lottie-player>
             </div>
           </div>
         </section>
