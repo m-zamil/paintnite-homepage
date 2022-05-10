@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
     LottieInteractivity.create({
       player: "#firstLottie",
       mode: "scroll",
@@ -23,4 +22,3 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       ],
     });
-  });
