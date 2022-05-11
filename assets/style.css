@@ -839,6 +839,7 @@ img {
   position: relative;
   width: 150px;
   max-width: 25%;
+  height: 100%;
 }
 
 .rewards__images .img-1 {
@@ -990,9 +991,7 @@ img {
         display: block;
       }
 
-      .social__gallery img {
-        height: 100%;
-      }
+
     }
   }
 
@@ -1422,6 +1421,7 @@ img {
 
   .social__gallery img {
     max-width: calc(33% - 20px);
+    height: 100%;
   }
 
   .social__outline {
