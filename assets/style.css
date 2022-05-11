@@ -952,9 +952,9 @@ img {
     padding: 0;
   }
 
-  /* .hero__video::after {
+  .hero__video::after {
     display: none;
-  } */
+  }
 
   .hero__animation {
     max-width: 100%;
@@ -965,9 +965,10 @@ img {
     margin-top: 16px;
   }
 
-  /* .hero__video video {
+  .hero__video video {
     clip-path: url(#svgClip);
-  } */
+    -webkit-clip-path: url(#svgClip);
+  }
 
   /* Welcome section */
   .welcome {
