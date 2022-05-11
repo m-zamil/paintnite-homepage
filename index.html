@@ -61,15 +61,17 @@
             </div>
           </div>
           <style>
-            .hero__video video {
-              clip-path: url(#svgClip);
-              -webkit-clip-path: url(#svgClip);
-            }
             @media not all and (min-resolution: 0.001dpcm) {
               @media {
                 .hero__video video {
                   clip-path: none;
                   -webkit-clip-path: none;
+                }
+                .welcome .container {
+                  background-position: left -138px;
+                }
+                .hero__video::after {
+                  display: block;
                 }
               }
             }
