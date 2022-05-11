@@ -974,6 +974,28 @@ img {
     -webkit-clip-path: url(#svgClip);
   }
 
+  /* Safari fixes */
+  @media not all and (min-resolution: 0.001dpcm) {
+    @media {
+      .hero__video video {
+        clip-path: none;
+        -webkit-clip-path: none;
+      }
+
+      .welcome .container {
+        background-image: none;
+      }
+
+      .hero__video::after {
+        display: block;
+      }
+
+      .social__gallery img {
+        height: 100%;
+      }
+    }
+  }
+
   /* Welcome section */
   .welcome {
     background-image: none;
