@@ -51,6 +51,7 @@
                   <path fill-rule="evenodd" fill="rgb(254, 2, 254)" d="M1,0 V0.842 c-0.08,0.077,-0.196,0.158,-0.327,0.158 A0.866,2,0,0,1,0.558,0.978 C0.348,0.897,0.143,0.936,0,0.987 V0" />
                 </clipPath>
               </svg>
+
               <div class="hero__animation">
                 <lottie-player src="./assets/animation/hero-section.json" background="transparent" speed="1" loop autoplay></lottie-player>
               </div>
@@ -59,6 +60,12 @@
               </div>
             </div>
           </div>
+          <style>
+            .hero__video video {
+              clip-path: url(#svgClip);
+              -webkit-clip-path: url(#svgClip);
+            }
+          </style>
         </section>
         <section class="welcome">
           <div class="container">
