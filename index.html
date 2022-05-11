@@ -65,6 +65,14 @@
               clip-path: url(#svgClip);
               -webkit-clip-path: url(#svgClip);
             }
+            @media not all and (min-resolution: 0.001dpcm) {
+              @media {
+                .hero__video video {
+                  clip-path: none;
+                  -webkit-clip-path: none;
+                }
+              }
+            }
           </style>
         </section>
         <section class="welcome">
