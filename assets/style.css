@@ -931,7 +931,7 @@ img {
 .form__wrapper {
   max-width: 650px;
   width: 100%;
-  height: 110px;
+  height: 85px;
   margin: 0 auto;
   transform: scale(0.85);
 }
