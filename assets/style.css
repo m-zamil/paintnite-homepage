@@ -479,9 +479,7 @@ img {
   display: block;
   position: absolute;
   bottom: 0;
-  right: 0px;
-  left: 285px;
-  left: 188px;
+  right: 0;
   font-size: 0;
   z-index: 1;
   width: 210px;
@@ -1002,11 +1000,14 @@ img {
       }
 
       .welcome .container {
-        background-image: none;
+        background-image: none !important;
       }
 
       .hero__video::after {
         display: block;
+      }
+      .hero__video::after {
+        width: calc(100% + 3px) !important;
       }
     }
   }
