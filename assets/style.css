@@ -272,13 +272,47 @@ img {
 .trending {
   background-color: var(--off-white);
   padding: 48px 0;
+  position: relative;
+  overflow-x: clip;
+  margin-top: 32px;
 }
 
 .trending iframe {
   min-height: 520px;
+  z-index: 1;
+  position: relative;
 }
 
 .trending iframe .YM_EventCardList::-webkit-scrollbar {
+  display: none;
+}
+.trending__outline {
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  top: -34px;
+  z-index: 0;
+}
+.trending__outline div {
+  font-size: 68px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  display: block;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #e3e3e3;
+  color: transparent;
+  line-height: 60px;
+  user-select: none;
+}
+.trending__outline div:nth-child(n + 4) {
+  display: none;
+}
+.trending__cta--m {
+  text-align: center;
+}
+.trending__cta--d {
   display: none;
 }
 
@@ -1094,6 +1128,41 @@ img {
     max-width: 425px;
   }
 
+  /* --trending-- */
+  .trending {
+    padding-bottom: 8px;
+    margin-top: 0;
+  }
+  .trending__outline {
+    text-align: left;
+    max-width: 1280px;
+    transform: translateX(-50%);
+    left: 50%;
+    top: -56px;
+  }
+  .trending__outline div {
+    font-size: 115px;
+    letter-spacing: 10px;
+    line-height: 105.5px;
+  }
+  .trending__outline div:nth-child(n + 4) {
+    display: block;
+  }
+  .trending__cta--m {
+    display: none;
+  }
+  .trending__cta--d {
+    display: block;
+    text-align: right;
+    z-index: 2;
+    position: relative;
+    margin-right: 85px;
+  }
+  .trending__cta--d a {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
   /* --Plan a NightOut-- */
   .nightout {
     background-image: url("./images/green-circle.svg"), url("./images/sea-green-circle.svg"), url("./images/golden-circle.svg");
@@ -1105,6 +1174,7 @@ img {
 
   .nightout .section__title {
     margin-bottom: 1.5em;
+    margin-top: 64px;
   }
 
   .nightout .container {
