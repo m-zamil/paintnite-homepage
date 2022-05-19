@@ -241,6 +241,14 @@ img {
   transform: translate(-50%, 0);
   bottom: 0;
 }
+/* Safari fixes */
+@media not all and (min-resolution: 0.001dpcm) {
+  @media {
+    .hero__video::after {
+      width: calc(100% + 3px) !important;
+    }
+  }
+}
 
 /* Welcome section */
 .welcome {
