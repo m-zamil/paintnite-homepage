@@ -313,6 +313,7 @@ img {
   color: transparent;
   line-height: 60px;
   user-select: none;
+  opacity: 0.5;
 }
 .trending__outline div:nth-child(n + 4) {
   display: none;
