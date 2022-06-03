@@ -1,3 +1,5 @@
+window.onload = function () {
+  if (window.LottieInteractivity) {
     LottieInteractivity.create({
       player: "#firstLottie",
       mode: "scroll",
@@ -22,3 +24,5 @@
         },
       ],
     });
+  }
+};
