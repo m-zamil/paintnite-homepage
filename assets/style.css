@@ -1317,7 +1317,7 @@ img {
     width: 296px;
     max-width: 297px;
     min-height: 246px;
-    height: auto;
+    height: 50%;
     justify-content: center;
   }
 
