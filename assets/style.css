@@ -920,10 +920,7 @@ img {
   width: calc(50% - 10px);
   margin-bottom: 10px;
   margin: 5px;
-}
-
-.social__gallery img:nth-child(n + 5) {
-  display: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .social__outline {
@@ -1508,8 +1505,10 @@ img {
   }
 
   .social__gallery img {
-    max-width: calc(33% - 20px);
-    height: 100%;
+    max-width: 185px;
+    height: 185px;
+    width: 185px;
+    object-fit: cover;
   }
 
   .social__outline {
@@ -1524,9 +1523,6 @@ img {
     font-size: 72px;
   }
 
-  .social__gallery img:nth-child(n + 5) {
-    display: block;
-  }
   /* Email form subscription */
   .email__subs .container {
     max-width: 1164px;
