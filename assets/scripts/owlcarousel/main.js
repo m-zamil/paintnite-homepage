@@ -37,7 +37,19 @@ $(document).ready(function () {
     template: '<img title="{{caption}}" src="{{image}}" />',
     limit: imageCount,
     resolution: "high_resolution",
-    accessToken: "IGQVJVdkh5NXRpS2NMY1lBVE83Y3FXX1pfQnhkd2ZADQjRPRC1BMDhodDI3b1NJZAlBMdnFIeldTWWk2S3gtUmdEdm1idWN2WlluTGNENFI5aUp2V2RmZAEVSaXdmVUZAFcG5fMzVWZAW5zUU5RUUtBYW40RAZDZD",
+    accessToken: "IGQVJVVmhzVzlzZAGJYanNyTV9fbkVqQ1I2MzdhU2VsU3BQTjFJSVNFM0ltSXNuYUk0eUowWVI0NmVDdW1WWjA3Wi1selRxZAFJNWE9lOHNDZAzhSM19iaV84ejV5SFlLRVUzR2J4dVR4SERUdlJQNmhrWQZDZD",
+    error: function () {
+      document.getElementById("instafeed-container").innerHTML = `
+      <img src="./assets/images/social-1.jpg" alt="" />
+      <img src="./assets/images/social-2.jpg" alt="" />
+      <img src="./assets/images/social-4.jpg" alt="" />
+      <img src="./assets/images/social-5.jpg" alt="" />
+      <img src="./assets/images/social-3.jpg" alt="" />
+      <img src="./assets/images/social-6.jpg" alt="" />
+      <img src="./assets/images/social-7.jpg" alt="" />
+      <img src="./assets/images/social-8.jpg" alt="" />
+      <img src="./assets/images/social-9.jpg" alt="" />`;
+    },
     filter: function (image) {
       return image.model.caption.includes("#paintnitedotcom");
     },

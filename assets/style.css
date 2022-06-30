@@ -922,7 +922,9 @@ img {
   margin: 5px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-
+.social__gallery img:nth-child(n + 5) {
+  display: none;
+}
 .social__outline {
   text-align: center;
   overflow: hidden;
@@ -1521,6 +1523,9 @@ img {
 
   .social__outline div {
     font-size: 72px;
+  }
+  .social__gallery img:nth-child(n + 5) {
+    display: block;
   }
 
   /* Email form subscription */
