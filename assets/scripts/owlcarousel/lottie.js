@@ -1,4 +1,11 @@
-window.onload = function () {
+window.onload = initialize();
+document.onreadystatechange = function () {
+  if (document.readyState == "complete") {
+    initialize();
+  }
+};
+
+function initialize() {
   if (window.LottieInteractivity) {
     LottieInteractivity.create({
       player: "#firstLottie",
@@ -25,4 +32,4 @@ window.onload = function () {
       ],
     });
   }
-};
+}
