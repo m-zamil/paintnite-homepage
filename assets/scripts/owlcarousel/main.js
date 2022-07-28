@@ -40,15 +40,15 @@ $(document).ready(function () {
     accessToken: "IGQVJVVmhzVzlzZAGJYanNyTV9fbkVqQ1I2MzdhU2VsU3BQTjFJSVNFM0ltSXNuYUk0eUowWVI0NmVDdW1WWjA3Wi1selRxZAFJNWE9lOHNDZAzhSM19iaV84ejV5SFlLRVUzR2J4dVR4SERUdlJQNmhrWQZDZD",
     error: function () {
       document.getElementById("instafeed-container").innerHTML = `
-      <img src="./assets/images/social-1.jpg" alt="" />
-      <img src="./assets/images/social-2.jpg" alt="" />
-      <img src="./assets/images/social-4.jpg" alt="" />
-      <img src="./assets/images/social-5.jpg" alt="" />
-      <img src="./assets/images/social-3.jpg" alt="" />
-      <img src="./assets/images/social-6.jpg" alt="" />
-      <img src="./assets/images/social-7.jpg" alt="" />
-      <img src="./assets/images/social-8.jpg" alt="" />
-      <img src="./assets/images/social-9.jpg" alt="" />`;
+      <img src="https://s3fs.paintnite.com/fresca-web-html/paintnite/landing-page/assets/images/social-1.jpg" alt="" />
+      <img src="https://s3fs.paintnite.com/fresca-web-html/paintnite/landing-page/assets/images/social-2.jpg" alt="" />
+      <img src="https://s3fs.paintnite.com/fresca-web-html/paintnite/landing-page/assets/images/social-4.jpg" alt="" />
+      <img src="https://s3fs.paintnite.com/fresca-web-html/paintnite/landing-page/assets/images/social-5.jpg" alt="" />
+      <img src="https://s3fs.paintnite.com/fresca-web-html/paintnite/landing-page/assets/images/social-3.jpg" alt="" />
+      <img src="https://s3fs.paintnite.com/fresca-web-html/paintnite/landing-page/assets/images/social-6.jpg" alt="" />
+      <img src="https://s3fs.paintnite.com/fresca-web-html/paintnite/landing-page/assets/images/social-7.jpg" alt="" />
+      <img src="https://s3fs.paintnite.com/fresca-web-html/paintnite/landing-page/assets/images/social-8.jpg" alt="" />
+      <img src="https://s3fs.paintnite.com/fresca-web-html/paintnite/landing-page/assets/images/social-9.jpg" alt="" />`;
     },
     filter: function (image) {
       return image.model.caption.includes("#paintnitedotcom");
