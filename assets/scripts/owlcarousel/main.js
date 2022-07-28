@@ -36,7 +36,7 @@ $(document).ready(function () {
     target: "instafeed-container",
     template: '<img title="{{caption}}" src="{{image}}" />',
     limit: imageCount,
-    resolution: "high_resolution",
+    resolution: "low_resolution",
     accessToken: "IGQVJVVmhzVzlzZAGJYanNyTV9fbkVqQ1I2MzdhU2VsU3BQTjFJSVNFM0ltSXNuYUk0eUowWVI0NmVDdW1WWjA3Wi1selRxZAFJNWE9lOHNDZAzhSM19iaV84ejV5SFlLRVUzR2J4dVR4SERUdlJQNmhrWQZDZD",
     error: function () {
       document.getElementById("instafeed-container").innerHTML = `
