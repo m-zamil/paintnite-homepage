@@ -1536,6 +1536,9 @@ img {
   .form__wrapper {
     transform: scale(1);
   }
+  .form__wrapper button {
+    min-width: 110px;
+  }
   .email__subs {
     padding: 70px 0;
   }
